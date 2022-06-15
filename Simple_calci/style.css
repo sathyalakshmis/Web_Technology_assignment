@@ -1,0 +1,23 @@
+input {
+    width: 100px;
+    height: 50px;
+    margin: 15px;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+input:hover[type="button"] {
+    background-color: rgb(176, 167, 167);
+}
+
+tr,
+td {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+body {
+    font-family: Tahoma, Geneva, Verdana;
+}
