@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+
+<head>
+    <title>Program 4</title>
+</head>
+</body>
+<script type="text/javascript">
+    var str = prompt("Enter the string\n", " ");
+    if (isNaN(str))
+        vowel_pos();
+    else
+        rev_num();
+
+    function vowel_pos() {
+        str1 = str.toLowerCase();
+        for (var i = 0; i < str1.length; i++) {
+            ch = str1.charAt(i);
+            if (ch == 'a' || ch == 'e' || ch == 'o' || ch == 'u') {
+                break;
+            }
+        }
+        if (i < str1.length)
+            document.write("The entered String is : " + str + " <br/> The position of the left most vowel is " + (i + 1) + "<br />");
+        else
+            document.write("No vowel is found in the entered string");
+    }
+
+    function rev_num() {
+        var n = str;
+        var rev = 0,
+            rem;
+        while (n > 0) {
+            rem = n % 10;
+            rev = rev * 10 + rem;
+            n = Math.floor(n / 10);
+        }
+        document.write("The entered number is : " + str + " <br/> The reversed number is : " + rev +
+            "\n");
+    }
+</script>
+
+<body>
+
+</html>
